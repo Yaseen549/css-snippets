@@ -1,0 +1,67 @@
+#shape {
+    height: 200px;
+    width: 100px;
+    background: tomato;
+    margin: auto auto auto auto;
+    border: 1px solid black;
+}
+ 
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+body{
+    display: flex;
+    margin: auto auto auto auto;
+}
+
+/* #shape {
+    width: 100px;
+    height: 200px;
+    background: red;
+    border-radius: 100px / 50px;
+}
+ */
+div {
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    background-color: coral;
+    animation: square-to-circle 5s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;  
+  }
+
+  @keyframes square-to-circle{
+    0%{background:red;}
+    25%{background:yellow;}
+    50%{background:blue;}
+    75%{background:green;}
+    100%{background:red;}
+}
+
+@keyframes square-to-circle {
+    0%{border-radius:0 0 0 0;
+      animation:colorchange5sinfinite;
+      /* transform:rotate(0deg); */
+    }
+    25%{border-radius:100% 100% 100% 100%;
+      animation:colorchange5sinfinite;
+      /* transform:rotate(45deg); */
+    }
+    50%  {
+      border-radius:100% 100% 100% 100%;      
+      animation:colorchange5sinfinite;
+      /* transform:rotate(90deg); */
+    }
+    75%  { 
+      border-radius:100% 100% 100% 100%;
+      animation:colorchange5sinfinite;
+      /* transform:rotate(135deg); */
+    }
+    100% {  
+      border-radius:0 0 0 0;
+      animation:colorchange5sinfinite;
+      /* transform:rotate(180deg); */
+    }
+  }
